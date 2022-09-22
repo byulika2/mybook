@@ -25,3 +25,6 @@ logging:
         type:
           descriptor:
             sql: trace
+      springframework:
+        transaction:
+          interceptor: trace
