@@ -28,3 +28,6 @@ logging:
       springframework:
         transaction:
           interceptor: trace
+
+server:
+  port: 8100
