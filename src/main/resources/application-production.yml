@@ -1,0 +1,14 @@
+spring:
+  profiles:
+    active: production
+
+logging:
+  pattern:
+    file: "[%d{HH:mm:ss.SSS}][%-5level][%logger.%method:line%line] - %msg%n"
+  file:
+    name: /home/opc/logs/my_book.log
+  logback:
+    rollingpolicy:
+      file-name-pattern: "/home/opc/logs/my_book.%d{yyyy-MM-dd}.%i.log"
+      max-history: 10
+      max-file-size: 100MB
